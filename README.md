@@ -52,12 +52,13 @@ If all settings are good, run the below command to create the VM:
 vagrant up
 ```
 
+## 3. Start packaging
 After the VM is up, user can access it via `vagrant ssh fedora-packager` (PASSWORD SET IN VAGRANT FILE) and execute the following commands:
 - `fkinit -u FAS_ACCOUNT` to start using fedpkg command  
 - `fedpkg clone PACKAGE` to clone a pakcage. Example: `fedpkg clone ovn && cd ovn`
 - List all branches: `git branch -a`
 - Switch branches: `fedpkg switch-branch f35`
 
-## 3. Resources
+## 4. Resources
 https://developer.fedoraproject.org/tools/vagrant/vagrant-libvirt.html
 https://developer.fedoraproject.org/tools/vagrant/vagrant-nfs.html
