@@ -2,7 +2,7 @@
 
 A quick documentation how to setup a Fedora Packager env to manage **official fedora packages**.
 
-## Setting Fedora
+## 1 Setting Fedora
 
 Before creating a Vagrant Virtual Machine with all tools required for Fedora packaging lets install the software needed in the HOST machine
 
@@ -45,7 +45,7 @@ $ sudo gpasswd -a ${USER} vagrant
 $ sudo -u ${USER} ${SHELL}
 ```
 
-## Creating the Virtual Machine
+## 2 Creating the Virtual Machine
 Before creating the `Fedora Packager VM` check the `Global Settings` [here](https://github.com/dougsland/fedora-packaging/blob/37f1119c0af123f6d9ad2ab99d1cd0802acc9e29/Vagrantfile#L1) for setting [Fedora Account (FAS)](https://github.com/dougsland/fedora-packaging/blob/680cab8b6cb7c406c6897f792befe752d5270fd1/Vagrantfile#L4), [private key for FAS account](https://github.com/dougsland/fedora-packaging/blob/680cab8b6cb7c406c6897f792befe752d5270fd1/Vagrantfile#L12), [Git username/email](https://github.com/dougsland/fedora-packaging/blob/680cab8b6cb7c406c6897f792befe752d5270fd1/Vagrantfile#L5), [non root user for the development](https://github.com/dougsland/fedora-packaging/blob/680cab8b6cb7c406c6897f792befe752d5270fd1/Vagrantfile#L8), [password](https://github.com/dougsland/fedora-packaging/blob/680cab8b6cb7c406c6897f792befe752d5270fd1/Vagrantfile#L8), etc.  
 If all settings are good, run the below command to create the VM:
 ```
@@ -58,6 +58,6 @@ After the VM is up, user can access it via `vagrant ssh fedora-packager` (PASSWO
 - List all branches: `git branch -a`
 - Switch branches: `fedpkg switch-branch f35`
 
-## Resources
+## 3 Resources
 https://developer.fedoraproject.org/tools/vagrant/vagrant-libvirt.html
 https://developer.fedoraproject.org/tools/vagrant/vagrant-nfs.html
