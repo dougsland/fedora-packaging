@@ -46,7 +46,7 @@ $ sudo -u ${USER} ${SHELL}
 ```
 
 ## Creating the Virtual Machine
-Before creating the `Fedora Packager` VM check the `Global Settings` [here](https://github.com/dougsland/fedora-packaging/blob/37f1119c0af123f6d9ad2ab99d1cd0802acc9e29/Vagrantfile#L1).
+Before creating the `Fedora Packager VM` check the `Global Settings` [here](https://github.com/dougsland/fedora-packaging/blob/37f1119c0af123f6d9ad2ab99d1cd0802acc9e29/Vagrantfile#L1).  
 If all settings are good, run the below command to create the VM:
 ```
 vagrant up
