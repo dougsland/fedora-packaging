@@ -1,6 +1,6 @@
 # fedora-packaging
 
-A quick documentation how to setup a Fedora Packager env with `Vagrant + libvirt` to manage **official fedora packages**.
+A quick documentation how to setup a `Fedora Packager` env with `Vagrant + libvirt` to manage **official fedora packages**.
 
 ## 1. Setting Vagrant and libvirt in Fedora
 
