@@ -6,13 +6,13 @@ A quick documentation how to setup a `Fedora Packager` env with `Vagrant + libvi
 
 Before creating a Vagrant Virtual Machine with all tools required for Fedora packaging lets install the software needed in the HOST machine
 
-- 1 Required Packages
+- 1.1 Required Packages
 ```
 sudo dnf install @vagrant
 sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 ```
 
-- 1.1 Set Permissions for the non root user running vagrant
+- 1.2 Set Permissions for the non root user running vagrant
 ```
 echo "allow all" | sudo tee /etc/qemu/${USER}.conf
 echo "include /etc/qemu/${USER}.conf" | sudo tee --append /etc/qemu/bridge.conf
@@ -20,7 +20,7 @@ sudo chown root:${USER} /etc/qemu/${USER}.conf
 sudo chmod 640 /etc/qemu/${USER}.conf
 ```
 
-- 1.2 Installing vagrant plugins
+- 1.3 Installing vagrant plugins
 ```
 vagrant plugin install vagrant-ssh
 ```
