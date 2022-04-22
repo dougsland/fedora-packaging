@@ -53,8 +53,8 @@ vagrant up
 ```
 
 ## 3. Start packaging
-After the VM is up, user can access it via `vagrant ssh fedora-packager` (PASSWORD SET IN VAGRANT FILE) and execute the following commands:
-- `fkinit -u FAS_ACCOUNT` to start using fedpkg command  
+After the VM is up, user can access it via `vagrant ssh fedora-packager` [PASSWORD SET IN VAGRANT FILE](https://github.com/dougsland/fedora-packaging/blob/2e96292e1d1f4df326bc0a050359db4ceadae9ce/Vagrantfile#L9) you can execute the following commands:
+- `fkinit -u FAS_ACCOUNT` to login and start using fedpkg command  
 - `fedpkg clone PACKAGE` to clone a pakcage. Example: `fedpkg clone ovn && cd ovn`
 - List all branches: `git branch -a`
 - Switch branches: `fedpkg switch-branch f35`
