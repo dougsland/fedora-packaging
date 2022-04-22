@@ -1,8 +1,8 @@
 # fedora-packaging
 
-A quick documentation how to setup a Fedora Packager env with Vagrant + libvirt to manage **official fedora packages**.
+A quick documentation how to setup a Fedora Packager env with `Vagrant + libvirt` to manage **official fedora packages**.
 
-## 1. Setting Fedora
+## 1. Setting Vagrant and libvirt in Fedora
 
 Before creating a Vagrant Virtual Machine with all tools required for Fedora packaging lets install the software needed in the HOST machine
 
