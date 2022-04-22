@@ -18,7 +18,7 @@ sudo dnf install @vagrant
 sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 ```
 
-- 1.2 Set Permissions for the non root user running vagrant
+- 1.2 Set Permissions for the **non root user running vagrant**
 ```
 echo "allow all" | sudo tee /etc/qemu/${USER}.conf
 echo "include /etc/qemu/${USER}.conf" | sudo tee --append /etc/qemu/bridge.conf
