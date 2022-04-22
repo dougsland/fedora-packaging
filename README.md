@@ -20,6 +20,7 @@ sudo firewall-cmd --permanent --zone=libvirt --add-service=nfs3 \
     && sudo firewall-cmd --permanent --zone=libvirt --add-service=rpc-bind \
     && sudo firewall-cmd --permanent --zone=libvirt --add-service=mountd \
     && sudo firewall-cmd --reload
+```
 
 
 - 3 Using NFS shares from Vagrant without password prompts
@@ -45,7 +46,7 @@ $ sudo -u ${USER} ${SHELL}
 ```
 
 ## Creating the Virtual Machine
-Before creating the `Fedora Packager` VM check the `Global Settings` [here](https://).
+Before creating the `Fedora Packager` VM check the `Global Settings` [here](https://github.com/dougsland/fedora-packaging/blob/37f1119c0af123f6d9ad2ab99d1cd0802acc9e29/Vagrantfile#L1).
 If all settings are good, run the below command to create the VM:
 ```
 vagrant up
