@@ -1,3 +1,9 @@
+- [fedora-packaging](#fedora-packaging)
+  * [1. Setting Vagrant and libvirt in Fedora](#1-setting-vagrant-and-libvirt-in-fedora)
+  * [2. Creating the Virtual Machine](#2-creating-the-virtual-machine)
+  * [3. Start packaging](#3-start-packaging)
+  * [4. Resources](#4-resources)
+
 # fedora-packaging
 
 A quick documentation how to setup a `Fedora Packager` env with `Vagrant + libvirt` to manage **official fedora packages**.
