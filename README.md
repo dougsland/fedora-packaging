@@ -1,6 +1,6 @@
 # fedora-packaging
 
-A quick documentation how to setup a Fedora Packager env to manage fedora packages.
+A quick documentation how to setup a Fedora Packager env to manage **official fedora packages**.
 
 ## Setting Fedora
 
