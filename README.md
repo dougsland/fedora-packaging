@@ -12,7 +12,7 @@ sudo dnf install @vagrant
 sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 ```
 
-- Set Permissions for the non root user running vagrant
+- 1.1 Set Permissions for the non root user running vagrant
 ```
 echo "allow all" | sudo tee /etc/qemu/${USER}.conf
 echo "include /etc/qemu/${USER}.conf" | sudo tee --append /etc/qemu/bridge.conf
@@ -20,7 +20,7 @@ sudo chown root:${USER} /etc/qemu/${USER}.conf
 sudo chmod 640 /etc/qemu/${USER}.conf
 ```
 
-- Installing vagrant plugins
+- 1.2 Installing vagrant plugins
 ```
 vagrant plugin install vagrant-ssh
 ```
